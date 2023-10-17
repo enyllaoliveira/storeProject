@@ -1,6 +1,6 @@
 import React from "react";
 
-export function RecomedationsPF() {
+export function Recomendations() {
     return (
        <div>
         <div className="text text-center"> seção com recomendações de PF </div>
