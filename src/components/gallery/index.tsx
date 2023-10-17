@@ -11,7 +11,7 @@ export function Gallery() {
   
         <section>
             <h1 className="cursor-pointer text-center"> Mesas e cadeiras </h1>
-            <img className="min-w-80 max-w-xs max-h-60" src={Table} alt="fotos das mesas" title="Galeria das mesas"/>
+            <img className="min-w-80 max-w-xs max-h-60 cursor-pointer" src={Table} alt="fotos das mesas" title="Galeria das mesas"/>
         </section>
 
         <section>
