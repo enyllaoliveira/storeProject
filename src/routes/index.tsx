@@ -1,26 +1,23 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Route, BrowserRouter, Routes } from "react-router-dom";
 import { Header } from '../components/header';
 import { Recomendations } from '../components/recomendations';
-import {Gallery} from '../components/gallery'
+import {Gallery} from '../components/gallery/components/galleryHome'
 import {Details} from '../components/details'
 import {Contact} from '../components/contact'
+import ShelfPage from '../components/gallery/components/galleryShelf/index'
 
-export default function AppWithRoutes() {
-    return (
+const AppRoutes = () => {
+        return (
         <BrowserRouter>
-            <Header/>
             <Routes>
-                <Route path="/recomendationsPF" element={<Recomendations/>} />
-                <Route path="/gallery" element={<Gallery/>} />
-                <Route path="/details" element={<Details/>} />
-                <Route path="/contact" element={<Contact/>} />
+            <Route element={<ShelfPage/>} path="/shelfpage"/>
             </Routes>
         </BrowserRouter>
-    );
-}
+        );
+} 
 
-
+export default AppRoutes
 
 
 

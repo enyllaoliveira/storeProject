@@ -1,17 +1,25 @@
 import React from "react";
-import Table from './pictures/bigTwo.jpeg'
-import Offices from './pictures/bigOfficeTable.jpeg'
-import Shelfs from './pictures/shelfTwo.png'
-import ShelsWall from './pictures/kitToWall.png'
-import Restaurants from './pictures/tableOne.jpeg'
+import { Link } from "react-router-dom";
+import Table from '../../pictures/bigOfficeTable.jpeg'
+import Offices from '../../pictures/bigOfficeTable.jpeg'
+import Shelfs from '../../pictures/shelfTwo.png'
+import ShelsWall from '../../pictures/kitToWall.png'
+import Restaurants from '../../pictures/tableOne.jpeg'
+import TablePage from "../galleryTable";
+import ShelfWallPage from "../shelfWallPage";
+import OfficePage from "../galleryToOffice";
+import RestaurantePage from "../galleryToRestaurant";
+import path from "path";
+import AppRoutes from "../../../../routes";
 
 export function Gallery() {
     return (
         <div className="flex flex-wrap justify-around">
   
         <section>
-            <h1 className="cursor-pointer text-center"> Mesas e cadeiras </h1>
-            <img className="min-w-80 max-w-xs max-h-60 cursor-pointer" src={Table} alt="fotos das mesas" title="Galeria das mesas"/>
+        <h1 className="cursor-pointer text-center"> Mesas e cadeiras </h1>
+        <img className="min-w-80 max-w-xs max-h-60 cursor-pointer" src={Table} alt="fotos das mesas" title="Galeria das mesas"/>
+        <Link to="/shelfpage">  </Link>
         </section>
 
         <section>
