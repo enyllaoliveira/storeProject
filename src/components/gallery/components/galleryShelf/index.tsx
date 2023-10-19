@@ -9,7 +9,7 @@ import Picture6 from '../../SectionsOfPictures/shelfs/smallShelf.jpeg'
 
 export default function ShelfPage() {
     return(
-        <div>
+        <div className='justify-around'>
            <img src={Picture1} alt="shelf and table"/>
            <img src={Picture2} alt="shelf one"/>
            <img src={Picture3} alt="shelf two"/>

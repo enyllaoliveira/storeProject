@@ -1,5 +1,9 @@
 export function Contact() {
-    return(
-        <button className='items-center bg-green-500 p-2'> Faça seu orçamento pelo WhatsApp</button>
+    return (
+        <div>
+           <button>Faça seu orçamento pelo wpp</button>
+            <hr></hr>
+        </div>
     )
+
 }
