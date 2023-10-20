@@ -9,13 +9,13 @@ import Picture6 from '../../SectionsOfPictures/shelfs/smallShelf.jpeg'
 
 export default function ShelfPage() {
     return(
-        <div className='justify-around'>
-           <img src={Picture1} alt="shelf and table"/>
-           <img src={Picture2} alt="shelf one"/>
-           <img src={Picture3} alt="shelf two"/>
-           <img src={Picture4} alt="shelf with parte one"/>
-           <img src={Picture5} alt="shelf with parte two"/>
-           <img src={Picture6} alt="small shelf"/>
+        <div className='flex flex-wrap justify-between mx-10	my-10'>
+           <img className='rounded-xl my-8 mx-8' src={Picture1} alt="shelf and table"/>
+           <img className='rounded-xl my-8 mx-8' src={Picture2} alt="shelf one"/>
+           <img className='rounded-xl my-8 mx-8' src={Picture3} alt="shelf two"/>
+           <img className='rounded-xl my-8 mx-8' src={Picture4} alt="shelf with parte one"/>
+           <img className='rounded-xl my-8 mx-8' src={Picture5} alt="shelf with parte two"/>
+           <img className='rounded-xl my-8 mx-8' src={Picture6} alt="small shelf"/>
         </div>
     )
 }
