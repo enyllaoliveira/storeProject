@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Table from '../../pictures/bigOfficeTable.jpeg'
+import Table from '../../pictures/bigTwo.jpeg'
 import Offices from '../../pictures/bigOfficeTable.jpeg'
 import Shelfs from '../../pictures/shelfTwo.png'
 import ShelsWall from '../../pictures/kitToWall.png'
