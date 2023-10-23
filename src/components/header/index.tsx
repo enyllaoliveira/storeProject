@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Recomendations } from "../recomendations";
-import { Gallery } from "../gallery/components/galleryHome";
+import { Gallery } from "../gallery/Pages/HomePage";
 import { Details } from "../details";
 import { Contact } from "../contact";
 

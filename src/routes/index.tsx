@@ -2,14 +2,14 @@ import React from 'react';
 import { Route, BrowserRouter, Routes } from "react-router-dom";
 import { Header } from '../components/header';
 import { Recomendations } from '../components/recomendations';
-import {Gallery} from '../components/gallery/components/galleryHome'
+import {Gallery} from '../components/gallery/Pages/HomePage'
 import {Details} from '../components/details'
 import {Contact} from '../components/contact'
-import ShelfPage from '../components/gallery/components/galleryShelf/index'
-import ShelfWallPage from '../components/gallery/components/shelfWallPage';
-import TablePage from '../components/gallery/components/galleryTable';
-import RestaurantePage from '../components/gallery/components/galleryToRestaurant';
-import OfficePage from '../components/gallery/components/galleryToOffice';
+import ShelfPage from '../../src/components/gallery/Pages/shelfPage'
+import ShelfWallPage from '../components/gallery/Pages/shelfWallPage';
+import TablePage from '../components/gallery/Pages/tablePage';
+import RestaurantePage from '../components/gallery/Pages/restaurantePage';
+import OfficePage from '../components/gallery/Pages/officePage';
 
 function AppRoutes() {
     return(
