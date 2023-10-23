@@ -8,10 +8,10 @@ import Picture3 from '../../SectionsOfPictures/shelsWall/kitToWall.png'
 
 export default function ShelfWallPage() {
     return(
-        <div className='justify-around'>
-            <img src={Picture1} alt="ShelfWall 1"/>
-            <img src={Picture2} alt="ShelfWall 2"/>
-            <img src={Picture3} alt="ShelfWall "/>
+        <div className='flex flex-wrap  justify-evenly'>
+            <img className='rounded-xl my-8 mx-8' src={Picture1} alt="ShelfWall 1"/>
+            <img className='rounded-xl my-8 mx-8' src={Picture2} alt="ShelfWall 2"/>
+            <img className='rounded-xl my-8 mx-8' src={Picture3} alt="ShelfWall "/>
         </div>
     )
 }
