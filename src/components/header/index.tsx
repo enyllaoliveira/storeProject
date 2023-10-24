@@ -4,6 +4,7 @@ import { Recomendations } from "../recomendations";
 import { Gallery } from "../gallery/Pages/HomePage";
 import { Details } from "../details";
 import { Contact } from "../contact";
+// import { Link } from 'react-scroll'
 
 export function Header() {
     return (
@@ -20,11 +21,11 @@ export function Header() {
 
             <div>
             <nav className="flex flex-col">
-                <Link to='/recomendations'>Recomendações </Link>
-                <Link to='/gallery'>Galeria de fotos </Link>
-                <Link to='/details'>Descrição do produto </Link>
-                <Link to='/contact'>Contato</Link>
-            </nav>
+            <Link to="recomendations">Recomendações</Link>
+            <Link to="gallery" >Galeria de fotos</Link>
+            <Link to="details">Descrição do produto</Link>
+            <Link to="contact">Contato</Link>
+          </nav>
             </div>
             </div>
 
