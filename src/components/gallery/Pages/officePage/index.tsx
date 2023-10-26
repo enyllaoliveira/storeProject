@@ -11,8 +11,8 @@ export default function OfficePage() {
         <div className='flex flex-wrap  justify-evenly'>
             <img className='rounded-xl my-8 mx-8' src={Picture1} alt="toOffice 1"/>
             <img className='rounded-xl my-8 mx-8' src={Picture2} alt="toOffice 2"/>
-            <img className='rounded-xl my-8 mx-8' src={Picture5} alt="toOffice 5"/>
-            <img className='rounded-xl my-8 mx-8' src={Picture6} alt="toOffice 6"/>
+            <img className='rounded-xl my-8 mx-8' src={Picture5} alt="toOffice 3"/>
+            <img className='rounded-xl my-8 mx-8' src={Picture6} alt="toOffice 4"/>
         </div>
     )
 }

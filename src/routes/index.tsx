@@ -10,22 +10,26 @@ import ShelfWallPage from '../components/gallery/Pages/shelfWallPage';
 import TablePage from '../components/gallery/Pages/tablePage';
 import RestaurantePage from '../components/gallery/Pages/restaurantePage';
 import OfficePage from '../components/gallery/Pages/officePage';
+import MainLayout  from '../components/mainLayout';
 
 function AppRoutes() {
     return(
         <BrowserRouter>
         <Routes>
-        <Route path='/' element={ <Header/>}></Route>
-        <Route path='/recomendations' element={ <Recomendations/>}></Route>
+        <Route path='/' element={ <MainLayout/>}>
+            
+        {/* <Route path='/recomendations' element={ <Recomendations/>}></Route>
         <Route path='/gallery' element={ <Gallery/>}></Route>
+        </Route>
+        
         <Route path='/details' element={ <Details/>}></Route>
         <Route path='/contact' element={ <Contact/>}> </Route>
         <Route path='/shelfpage' element={ <ShelfPage/>}> </Route>
         <Route path='/shelfwallpage' element={ <ShelfWallPage/>}> </Route>
         <Route path='/tablepage' element={ <TablePage/>}> </Route>
         <Route path='/restaurantepage' element={ <RestaurantePage/>}> </Route>
-        <Route path='/officepage' element={ <OfficePage/>}> </Route>
-
+        <Route path='/officepage' element={ <OfficePage/>}> </Route> */}
+    </Route>
         </Routes>
     </BrowserRouter>
     )

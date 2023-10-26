@@ -10,12 +10,12 @@ import Picture6 from '../../SectionsOfPictures/toRestaurants//tableTwo.jpeg'
 export default function RestaurantePage() {
     return(
         <div className='flex flex-wrap  justify-evenly'>
-           <img className='rounded-xl my-8 mx-8' src={Picture5} alt="Picture 5" />
-           <img className='rounded-xl my-8 mx-8' src={Picture6} alt="Picture 6" />
+           <img className='rounded-xl my-8 mx-8' src={Picture5} alt="Picture 1" />
+           <img className='rounded-xl my-8 mx-8' src={Picture6} alt="Picture 2" />
            <img className='rounded-xl my-8 mx-8' src={Picture3} alt="Picture 3" />
-           <img className='rounded-xl my-8 mx-8' src={Picture1} alt="Picture 1" />
-           <img className='rounded-xl my-8 mx-8' src={Picture4} alt="Picture 4" />
-           <img className='rounded-xl my-8 mx-8' src={Picture2} alt="Picture 2" />
+           <img className='rounded-xl my-8 mx-8' src={Picture1} alt="Picture 4" />
+           <img className='rounded-xl my-8 mx-8' src={Picture4} alt="Picture 5" />
+           <img className='rounded-xl my-8 mx-8' src={Picture2} alt="Picture 6" />
         </div>
     )
 }
