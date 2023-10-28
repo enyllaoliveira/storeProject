@@ -8,9 +8,9 @@ export function Header() {
     const scrollContact = useRef<HTMLInputElement>(null)
 
     return (
-        <div className="flex flex-col">
+        <div className="flex flex-col ">
 
-            <div className="flex flex-row py-6 justify-around">
+            <div className="flex flex-row py-6 my-2">
             <Link to='/'>
             <section> Espaço para Logo</section>
             </Link>
@@ -43,7 +43,6 @@ export function Header() {
             </div>
             </div>
 
-            <hr />
         </div>
     );
 }

@@ -18,6 +18,7 @@ function AppRoutes() {
         <Routes>
         <Route path='/' element={ <MainLayout/>}>
             
+
         {/* <Route path='/recomendations' element={ <Recomendations/>}></Route>
         <Route path='/gallery' element={ <Gallery/>}></Route>
         </Route>
