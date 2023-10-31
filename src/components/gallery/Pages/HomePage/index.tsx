@@ -1,10 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Route } from "react-router-dom";
 import Table from '../../SectionsOfPictures/Home/bigTwo.jpeg'
 import Offices from '../../SectionsOfPictures/Home/bigOfficeTable.jpeg'
 import Shelfs from '../../SectionsOfPictures/Home/shelfTwo.png'
 import ShelsWall from '../../SectionsOfPictures/Home/kitToWall.png'
 import Restaurants from '../../SectionsOfPictures/Home/tableOne.jpeg'
+import AppRoutes from "../../../../routes";
 
 export function Gallery() {
     return (
@@ -13,7 +15,7 @@ export function Gallery() {
                 <h1 className="cursor-pointer font-bold text-xl">Mesas e Cadeiras</h1>
                 <img className="rounded-xl my-3" src={Table} alt="Fotos das mesas" title="Galeria das mesas" />
                 <div>
-                    <Link className="font-bold text-sm" target="_blank" to='/tablepage'>Galeria de fotos</Link>
+                    <Link to='/tablepage' className="font-bold text-sm" target="_blank" >Galeria de fotos</Link>
                 </div>
             </section>
 
@@ -21,7 +23,7 @@ export function Gallery() {
                 <h1 className="cursor-pointer font-bold text-xl">Estantes</h1>
                 <img className="rounded-xl my-3" src={Shelfs} alt="Fotos das estantes" title="Galeria de estantes" />
                 <div>
-                    <Link className="font-bold text-sm" target="_blank" to='/shelfpage'>Galeria de fotos</Link>
+                    <Link to='/shelfpage' className="font-bold text-sm" target="_blank">Galeria de fotos</Link>
                 </div>
             </section>
 

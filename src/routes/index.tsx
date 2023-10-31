@@ -1,39 +1,27 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Route, BrowserRouter, Routes } from "react-router-dom";
-import { Header } from '../components/header';
-import { Recomendations } from '../components/recomendations';
-import {Gallery} from '../components/gallery/Pages/HomePage'
-import {Details} from '../components/details'
-import {Contact} from '../components/contact'
-import ShelfPage from '../../src/components/gallery/Pages/shelfPage'
+import ShelfPage from '../../src/components/gallery/Pages/shelfPage';
 import ShelfWallPage from '../components/gallery/Pages/shelfWallPage';
 import TablePage from '../components/gallery/Pages/tablePage';
 import RestaurantePage from '../components/gallery/Pages/restaurantePage';
 import OfficePage from '../components/gallery/Pages/officePage';
-import MainLayout  from '../components/mainLayout';
+import MainLayout from '../components/mainLayout';
 
 function AppRoutes() {
-    return(
-        <BrowserRouter>
-        <Routes>
-        <Route path='/' element={ <MainLayout/>}>
-            
-
-        {/* <Route path='/recomendations' element={ <Recomendations/>}></Route>
-        <Route path='/gallery' element={ <Gallery/>}></Route>
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<MainLayout />}>
         </Route>
-        
-        <Route path='/details' element={ <Details/>}></Route>
-        <Route path='/contact' element={ <Contact/>}> </Route>
-        <Route path='/shelfpage' element={ <ShelfPage/>}> </Route>
-        <Route path='/shelfwallpage' element={ <ShelfWallPage/>}> </Route>
-        <Route path='/tablepage' element={ <TablePage/>}> </Route>
-        <Route path='/restaurantepage' element={ <RestaurantePage/>}> </Route>
-        <Route path='/officepage' element={ <OfficePage/>}> </Route> */}
-    </Route>
-        </Routes>
+        <Route path='/shelfpage' element={<ShelfPage/>} />
+        <Route path='/shelfwallpage' element={<ShelfWallPage/>} />
+        <Route path='/tablepage' element={<TablePage/>} />
+        <Route path='/restaurantepage' element={<RestaurantePage/>} />
+        <Route path='/officepage' element={<OfficePage/>} />
+      </Routes>
     </BrowserRouter>
-    )
+  );
 }
 
 export default AppRoutes;

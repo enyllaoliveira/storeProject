@@ -1,49 +1,43 @@
-import React, {useRef} from "react";
+import React, {useEffect} from "react";
 import { Link } from "react-router-dom";
+import { ItemNav } from "../../interfaces/ItemNav";
 
-export function Header() {
-    const scrollRecomendation = useRef<HTMLInputElement>(null)
-    const scrollGallery = useRef<HTMLInputElement>(null)
-    const scrollDetails = useRef<HTMLInputElement>(null)
-    const scrollContact = useRef<HTMLInputElement>(null)
+export interface ChildProps{
+    onClick: (name: ItemNav) => void
+}
+
+export function Header( props: ChildProps) { 
+        const callback = (name: ItemNav) => {
+         props.onClick(name)
+}  
 
     return (
-        <div className="flex flex-col ">
+            <div className="flex flex-row">
+        
+        <div>
+            
+        </div>
+            <section className="hover:underline cursor-pointer font-bold text-white mb-2"> Espaço para Logo</section>
 
-            <div className="flex flex-row py-6 my-2">
-            <Link to='/'>
-            <section> Espaço para Logo</section>
-            </Link>
-
-            <div>
-            <button className="cursor-pointer hover:py-2 px-4 bg-green-500 rounded-lg">Faça seu orçamento pelo WhatsApp</button>
-            </div>
-
-            <div>
-            <nav className="flex flex-col">
-            <button onClick={() => scrollRecomendation.current?.scrollIntoView()}>
+            <nav className="flex flex-col ">
+            <button className="hover:underline cursor-pointer font-bold text-white mb-2" onClick={() => callback({type:'1'})}>
             Recomendações
             </button>
-            <button onClick={() => scrollGallery.current?.scrollIntoView()}>
+            
+            <button className="hover:underline cursor-pointer font-bold text-white mb-2" onClick={() => callback({type:'2'})}>
             Galeria de fotos
             </button>
 
-            <button onClick={() => scrollDetails.current?.scrollIntoView()}>
+            <button className="hover:underline cursor-pointer font-bold text-white mb-2" onClick={() => callback({type:'3'})}>
             Detalhes do produto
             </button>
 
-            <button onClick={() => scrollContact.current?.scrollIntoView()}>
+            <button  className="hover:underline cursor-pointer font-bold text-white mb-2" onClick={() => callback({type:'4'})}>
             Contato
             </button>
-            {/* <Link to="/recomendations">Recomendações</Link>
-            <Link to="/gallery" >Galeria de fotos</Link>
-            <Link to="/details">Descrição do produto</Link>
-            <Link to="/contact">Contato</Link> */}
-             </nav>
-            </div>
-            </div>
 
-        </div>
+           </nav>
+            </div>
     );
 }
 
