@@ -71,8 +71,7 @@ const MainLayout = () => {
       <div className="flex flex-col" >
         <div style={Picture}>
 
-        <div className="flex flex-row justify-between ml-6 py-4">
-
+        <div className=" ml-6 py-4 ">
           <Header onClick={callback}/>
         </div>
            

@@ -12,32 +12,26 @@ export function Header( props: ChildProps) {
 }  
 
     return (
-            <div className="flex flex-row">
-        
-        <div>
-            
-        </div>
-            <section className="hover:underline cursor-pointer font-bold text-white mb-2"> Espaço para Logo</section>
+        <div className="flex space-x-20 justify-between">
+        <section className="hover:underline cursor-pointer font-bold text-white mb-2 mx-4"> Espaço para Logo</section>
+        <nav className="flex flex-col">
+           <button className="hover:underline cursor-pointer font-bold text-white mb-2 mx-4" onClick={() => callback({type:'1'})}>
+           Recomendações
+           </button>
+           
+           <button className="hover:underline cursor-pointer font-bold text-white mb-2 mx-4" onClick={() => callback({type:'2'})}>
+           Galeria de fotos
+           </button>
 
-            <nav className="flex flex-col ">
-            <button className="hover:underline cursor-pointer font-bold text-white mb-2" onClick={() => callback({type:'1'})}>
-            Recomendações
-            </button>
-            
-            <button className="hover:underline cursor-pointer font-bold text-white mb-2" onClick={() => callback({type:'2'})}>
-            Galeria de fotos
-            </button>
+           <button className="hover:underline cursor-pointer font-bold text-white mb-2 mx-4" onClick={() => callback({type:'3'})}>
+           Detalhes do produto
+           </button>
 
-            <button className="hover:underline cursor-pointer font-bold text-white mb-2" onClick={() => callback({type:'3'})}>
-            Detalhes do produto
-            </button>
-
-            <button  className="hover:underline cursor-pointer font-bold text-white mb-2" onClick={() => callback({type:'4'})}>
-            Contato
-            </button>
-
-           </nav>
-            </div>
+           <button  className="hover:underline cursor-pointer font-bold text-white mb-2 mx-4" onClick={() => callback({type:'4'})}>
+           Contato
+           </button>
+          </nav>
+           </div>
     );
 }
 
