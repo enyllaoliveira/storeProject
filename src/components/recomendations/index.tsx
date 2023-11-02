@@ -14,19 +14,19 @@ export function Recomendations() {
           </h1>
           <ul className="text-xl text-white text-center space-y-10">
             <li className="flex items-center justify-center">
-              <TbCheck /> Há quatro anos no mercado
+              <TbCheck className="mr-1" /> Há mais de quatro anos no mercado.
             </li>
             <li className="flex items-center justify-center ">
-              <TbCheck /> Entrega em toda Brasília
+              <TbCheck className="mr-1" /> Entrega em todo o DF.
             </li>
             <li className="flex items-center justify-center">
-              <TbCheck /> Atendimento personalizado
+              <TbCheck className="mr-1" /> Atendimento personalizado.
             </li>
             <li className="flex items-center justify-center ">
-              <TbCheck /> Trabalhos executados em madeira
+              <TbCheck className="mr-1" /> Trabalhos executados em madeira.
             </li>
             <li className="flex items-center justify-center">
-              <TbCheck /> XX anos de garantia
+              <TbCheck className="mr-1" />06 meses de garantia .
             </li>
           </ul>
         </section>

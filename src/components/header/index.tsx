@@ -14,7 +14,7 @@ export function Header( props: ChildProps) {
     return (
         <div className="flex space-x-20 justify-between">
         <section className="hover:underline cursor-pointer font-bold text-white mb-2 mx-4"> Espaço para Logo</section>
-        <nav className="flex flex-col">
+        <nav className="flex flex-row">
            <button className="hover:underline cursor-pointer font-bold text-white mb-2 mx-4" onClick={() => callback({type:'1'})}>
            Recomendações
            </button>
