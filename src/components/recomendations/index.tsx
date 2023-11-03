@@ -1,6 +1,4 @@
 import React from "react";
-// import { VscArrowRight } from "react-icons/vsc";
-import { RiChat1Fill } from "react-icons/ri";
 import { TbBrandLine } from "react-icons/tb";
 import { TbCheck } from "react-icons/tb";
 

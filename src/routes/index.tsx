@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { Route, BrowserRouter, Routes } from "react-router-dom";
 import ShelfPage from '../../src/components/gallery/Pages/shelfPage';
 import ShelfWallPage from '../components/gallery/Pages/shelfWallPage';

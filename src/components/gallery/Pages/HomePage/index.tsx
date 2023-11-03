@@ -1,12 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Route } from "react-router-dom";
 import Table from '../../SectionsOfPictures/Home/bigTwo.jpeg'
 import Offices from '../../SectionsOfPictures/Home/bigOfficeTable.jpeg'
 import Shelfs from '../../SectionsOfPictures/Home/shelfTwo.png'
 import ShelsWall from '../../SectionsOfPictures/Home/kitToWall.png'
 import Restaurants from '../../SectionsOfPictures/Home/tableOne.jpeg'
-import AppRoutes from "../../../../routes";
 
 export function Gallery() {
     return (
