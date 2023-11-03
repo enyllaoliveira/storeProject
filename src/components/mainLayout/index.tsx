@@ -83,7 +83,7 @@ const MainLayout = () => {
         </div>
 
         <section ref={scrollGallery}
-        className="transition-transform delay-300 ease-in-out transform -translate-x-4 opacity-1 shadow-lg border border-gray-200 p-4">
+        className="  ml-6 py-4">
         <Gallery />
          </section>
 

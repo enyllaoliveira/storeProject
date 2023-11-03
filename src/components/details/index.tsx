@@ -10,7 +10,7 @@ export function Details() {
   }, []);
 
   return (
-    <div className="text-xl text-black text-center space-y-6">
+    <div className="my-6 text-xl text-black text-center space-y-6">
       <p className={`summary-text transform ${isAnimated ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-1000 ease-in-out`}>
         A BSB INDUSTRIAL é uma empresa especializada na fabricação de móveis industriais planejados, com mais de quatro anos de experiência no mercado.
       </p>
