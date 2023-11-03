@@ -15,6 +15,7 @@ import Picture14 from '../../SectionsOfPictures/tables/tableWhiteTwo.jpeg'
 import Picture15 from '../../SectionsOfPictures/tables/tableWhiteThree.jpeg'
 import Picture16 from '../../SectionsOfPictures/tables/tableWhiteFour.jpeg'
 import Picture17 from '../../SectionsOfPictures/tables/tableWhiteFive.jpeg'
+import Picture18 from '../../SectionsOfPictures/tables/newTable.jpeg'
 
 export default function TablePage() {
     return(
@@ -33,6 +34,8 @@ export default function TablePage() {
             <img className='rounded-xl my-8 mx-8' src={Picture8} alt="Table 12"/>
             <img className='rounded-xl my-8 mx-8' src={Picture11} alt="Table 13"/>
             <img className='rounded-xl my-8 mx-8' src={Picture12} alt="Table 14"/>
+            <img className='rounded-xl my-8 mx-8' src={Picture18} alt="Table 15"/>
+
             
         </div>
     )

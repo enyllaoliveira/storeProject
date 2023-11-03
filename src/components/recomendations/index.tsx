@@ -26,7 +26,7 @@ export function Recomendations() {
               <TbCheck className="mr-1" /> Trabalhos executados em madeira.
             </li>
             <li className="flex items-center justify-center">
-              <TbCheck className="mr-1" />06 meses de garantia .
+              <TbCheck className="mr-1" />06 meses de garantia.
             </li>
           </ul>
         </section>
