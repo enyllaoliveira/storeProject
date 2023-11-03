@@ -1,11 +1,9 @@
-import React, {forwardRef, useRef, useEffect, useState} from "react";
-import { Link, Outlet, Route } from "react-router-dom";
+import React, {useRef, useEffect, useState} from "react";
 import { Header } from "../header";
 import { Gallery } from "../gallery/Pages/HomePage";
 import { Recomendations } from "../recomendations";
 import { Details } from "../details";
 import { Contact } from "../contact";
-import { CiAt } from "react-icons/ci";
 import PictureFundo from '../gallery/SectionsOfPictures/Layout/bigOne.jpeg'
 import { ItemNav } from "../../interfaces/ItemNav";
 
@@ -44,28 +42,6 @@ const MainLayout = () => {
       backgroundSize: 'cover',
       backgroundRepeat: 'no-repeat',
     }
-
-    // const [isIntersecting, setIsIntersecting] = useState(false);
-
-    // useEffect(() => {
-    //     const MyObserver = new IntersectionObserver((entries) => {
-    //       entries.forEach((entry) => {
-    //         setIsIntersecting(entry.isIntersecting);
-    //       });
-    //     });
-    
-    //     if (scrollContact.current) {
-    //       MyObserver.observe(scrollContact.current);
-    //     }
-    //   }, []);
-    
-    //   const sectionClasses = `transition-opacity duration-500 ${
-    //     isIntersecting ? "opacity-75" : "opacity-100"
-    //   }`;
-    
-    //   const sectionClassesDetails = `transition-transform duration-500 ${
-    //     isIntersecting ? "transform translate-x-0" : "transform -translate-x-4"
-    //   }`;
 
     return (
       <div className="flex flex-col" >
