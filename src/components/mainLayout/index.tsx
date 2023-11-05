@@ -8,6 +8,12 @@ import PictureFundo from '../gallery/SectionsOfPictures/Layout/bigOne.jpeg'
 import { ItemNav } from "../../interfaces/ItemNav";
 
 const MainLayout = () => {
+    const Picture = {
+    backgroundImage: `url(${PictureFundo})`,
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    }
+
     const scrollRecomendation = useRef<HTMLInputElement>(null)
     const scrollGallery = useRef<HTMLInputElement>(null)
     const scrollDetails = useRef<HTMLInputElement>(null)
@@ -18,10 +24,6 @@ const MainLayout = () => {
       setItemNav(name)
     }
 
-    useEffect(() => {
-      navigateItem()
-    }, [itemNav])
-    
     const scroll = {
       '1': scrollRecomendation,
       '2': scrollGallery,
@@ -37,12 +39,10 @@ const MainLayout = () => {
       }
     }
 
-    const Picture = {
-      backgroundImage: `url(${PictureFundo})`,
-      backgroundSize: 'cover',
-      backgroundRepeat: 'no-repeat',
-    }
-
+    useEffect(() => {
+      navigateItem()
+    }, [itemNav])
+    
     return (
       <div className="flex flex-col" >
         <div style={Picture}>
