@@ -2,12 +2,12 @@ import React from "react";
 import { ItemNav } from "../../interfaces/ItemNav";
 
 export interface ChildProps{
-    onClick: (name: ItemNav) => void
+    onClick: (identifier: ItemNav) => void
 }
 
 export function Header( props: ChildProps) { 
-        const callback = (name: ItemNav) => {
-         props.onClick(name)
+        const callback = (identifier: ItemNav) => {
+         props.onClick(identifier)
 }  
 
     return (
