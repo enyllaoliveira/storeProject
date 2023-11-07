@@ -11,7 +11,7 @@ function AppRoutes() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<MainLayout />}>
+        <Route path='/' element={<MainLayout/>}>
         </Route>
         <Route path='/shelfpage' element={<ShelfPage/>} />
         <Route path='/shelfwallpage' element={<ShelfWallPage/>} />

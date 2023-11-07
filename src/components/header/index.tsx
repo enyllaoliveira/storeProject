@@ -5,7 +5,7 @@ export interface ChildProps{
     onClick: (identifier: ItemNav) => void
 }
 
-export function Header( props: ChildProps) { 
+export function Header(props: ChildProps) { 
         const callback = (identifier: ItemNav) => {
          props.onClick(identifier)
 }  

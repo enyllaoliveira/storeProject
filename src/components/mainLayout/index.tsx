@@ -52,7 +52,7 @@ const MainLayout = () => {
         </div>
            
         <section ref={scrollRecomendation} 
-        className="shadow-lg p-4">
+        className="shadow-lg p-4 " >
                                         
         <Recomendations/>
         </section> 
@@ -60,14 +60,14 @@ const MainLayout = () => {
 
         <section ref={scrollGallery}
         className="  ml-6 py-4">
-        <Gallery />
+        <Gallery/>
          </section>
 
         <section ref={scrollDetails} className="shadow-lg border border-gray-200 p-4">
         <Details/>
         </section>
         
-        <section ref={scrollContact} className="shadow-lg border border-gray-200 p-4`} shadow-md border border-gray-200 p-4">
+        <section ref={scrollContact} className="p-4">
         <Contact/>
         </section>
         </div>
