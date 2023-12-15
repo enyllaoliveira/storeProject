@@ -1,36 +1,70 @@
-import React from "react";
+import React, { useState } from "react";
 import { ItemNav } from "../../interfaces/ItemNav";
+import { FaBars } from "react-icons/fa"; // Importa o ícone do react-icons
 
-export interface ChildProps{
-    onClick: (identifier: ItemNav) => void
+export interface ChildProps {
+  onClick: (identifier: ItemNav) => void;
 }
 
-export function Header(props: ChildProps) { 
-        const callback = (identifier: ItemNav) => {
-         props.onClick(identifier)
-}  
+export function Header(props: ChildProps) {
+  const [menuOpen, setMenuOpen] = useState(false);
 
-    return (
-        <div className="flex space-x-20 justify-between">
-        <section className="hover:underline cursor-pointer font-bold text-white mb-2 mx-4"> Espaço para Logo</section>
-        <nav className="flex flex-row">
-           <button className="hover:underline cursor-pointer font-bold text-white mb-2 mx-4" onClick={() => callback({type:'1'})}>
-           Recomendações
-           </button>
-           
-           <button className="hover:underline cursor-pointer font-bold text-white mb-2 mx-4" onClick={() => callback({type:'2'})}>
-           Galeria de fotos
-           </button>
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
 
-           <button className="hover:underline cursor-pointer font-bold text-white mb-2 mx-4" onClick={() => callback({type:'3'})}>
-           Detalhes do produto
-           </button>
+  const callback = (identifier: ItemNav) => {
+    props.onClick(identifier);
+    // Fechar o menu em telas menores após clicar em um item
+    if (menuOpen) {
+      toggleMenu();
+    }
+  };
 
-           <button  className="hover:underline cursor-pointer font-bold text-white mb-2 mx-4" onClick={() => callback({type:'4'})}>
-           Contato
-           </button>
-          </nav>
-           </div>
-    );
+  return (
+    <div className="flex flex-row md:flex-row md:space-x-20 justify-between items-center">
+      <section className="hover:underline cursor-pointer font-bold text-white mb-2 mx-4">
+        Espaço para Logo
+      </section>
+      <button
+        className="md:hidden hover:underline cursor-pointer font-bold text-white mb-2 mx-4"
+        onClick={toggleMenu}
+      >
+        <FaBars />
+      </button>
+      <nav
+        className={`${
+          menuOpen ? "flex flex-col" : "hidden"
+        } md:flex md:flex-row md:items-center`}
+      >
+        <button
+          className="hover:underline cursor-pointer font-bold text-white mb-2 mx-4"
+          onClick={() => callback({ type: "1" })}
+        >
+          Recomendações
+        </button>
+
+        <button
+          className="hover:underline cursor-pointer font-bold text-white mb-2 mx-4"
+          onClick={() => callback({ type: "2" })}
+        >
+          Galeria de fotos
+        </button>
+
+        <button
+          className="hover:underline cursor-pointer font-bold text-white mb-2 mx-4"
+          onClick={() => callback({ type: "3" })}
+        >
+          Detalhes do produto
+        </button>
+
+        <button
+          className="hover:underline cursor-pointer font-bold text-white mb-2 mx-4"
+          onClick={() => callback({ type: "4" })}
+        >
+          Contato
+        </button>
+      </nav>
+    </div>
+  );
 }
-
