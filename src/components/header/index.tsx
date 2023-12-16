@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { ItemNav } from "../../interfaces/ItemNav";
 import { FaBars } from "react-icons/fa"; // Importa o ícone do react-icons
+import { GiWoodPile } from "react-icons/gi";
+
 
 export interface ChildProps {
   onClick: (identifier: ItemNav) => void;
@@ -15,7 +17,6 @@ export function Header(props: ChildProps) {
 
   const callback = (identifier: ItemNav) => {
     props.onClick(identifier);
-    // Fechar o menu em telas menores após clicar em um item
     if (menuOpen) {
       toggleMenu();
     }
@@ -24,7 +25,7 @@ export function Header(props: ChildProps) {
   return (
     <div className="flex flex-row md:flex-row md:space-x-20 justify-between items-center">
       <section className="hover:underline cursor-pointer font-bold text-white mb-2 mx-4">
-        Espaço para Logo
+        <GiWoodPile size={46}/>
       </section>
       <button
         className="md:hidden hover:underline cursor-pointer font-bold text-white mb-2 mx-4"
