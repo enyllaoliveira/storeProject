@@ -1,8 +1,7 @@
-import React, { useState } from "react"
-import { ItemNav } from "../../interfaces/ItemNav"
-import { FaBars } from "react-icons/fa"
-import { GiWoodPile } from "react-icons/gi"
-
+import React, { useState } from "react";
+import { ItemNav } from "../../interfaces/ItemNav";
+import { FaBars } from "react-icons/fa";
+import { GiWoodPile } from "react-icons/gi";
 
 export interface ChildProps {
   onClick: (identifier: ItemNav) => void;
@@ -25,10 +24,10 @@ export function Header(props: ChildProps) {
   return (
     <div className="flex flex-row md:flex-row md:space-x-20 justify-between items-center">
       <section className="hover:underline cursor-pointer font-bold text-white mb-2 mx-4">
-        <GiWoodPile size={46}/>
+        <GiWoodPile size={46} />
       </section>
       <button
-        className="md:hidden hover:underline cursor-pointer font-bold text-white mb-2 mx-4"
+        className={`md:hidden hover:underline cursor-pointer font-bold text-white mb-2 mx-4 ${menuOpen ? 'hidden' : 'block'}`}
         onClick={toggleMenu}
       >
         <FaBars />
