@@ -1,8 +1,16 @@
-import { BsWhatsapp } from "react-icons/bs";
+import { BsWhatsapp } from "react-icons/bs"
 
 export function Contact() {
   const handleWhatsappClick = () => {
-    window.open("https://web.whatsapp.com/send?phone=5561991368793", '_blank', 'noopener,noreferrer');
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent)
+
+    let link = "https://web.whatsapp.com/send?phone=5561991368793"
+
+    if (isMobile) {
+      link = "whatsapp://send?phone=5561991368793"
+    }
+
+    window.open(link, '_blank', 'noopener,noreferrer')
   };
 
   return (
@@ -18,5 +26,5 @@ export function Contact() {
         <span className="md:inline">Faça agora o seu orçamento pelo WhatsApp</span>
       </a>
     </div>
-  );
+  )
 }

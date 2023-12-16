@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import { ItemNav } from "../../interfaces/ItemNav";
-import { FaBars } from "react-icons/fa"; // Importa o ícone do react-icons
-import { GiWoodPile } from "react-icons/gi";
+import React, { useState } from "react"
+import { ItemNav } from "../../interfaces/ItemNav"
+import { FaBars } from "react-icons/fa"
+import { GiWoodPile } from "react-icons/gi"
 
 
 export interface ChildProps {
